@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>filenames</key>
+	<dict>
+		<key>arts/Hiccuping-SoundBible.com-777862873.wav</key>
+		<string>arts/Hiccuping-SoundBible.com-777862873.caf</string>
+		<key>arts/Jump.wav</key>
+		<string>arts/Jump.caf</string>
+		<key>arts/Mario_Jumpinp.wav</key>
+		<string>arts/Mario_Jumpinp.caf</string>
+		<key>arts/PopRight.wav</key>
+		<string>arts/PopRight.caf</string>
+		<key>arts/Punch.wav</key>
+		<string>arts/Punch.caf</string>
+		<key>arts/Ting.wav</key>
+		<string>arts/Ting.caf</string>
+		<key>arts/Uh Oh Baby-SoundBible.com-1858856676.wav</key>
+		<string>arts/Uh Oh Baby-SoundBible.com-1858856676.caf</string>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>version</key>
+		<integer>1</integer>
+	</dict>
+</dict>
+</plist>
