@@ -9,6 +9,7 @@
 #import "MainScene.h"
 #import "Egg.h"
 #import <Social/Social.h>
+#import "AppDelegate.h"
 
 
 
@@ -332,11 +333,19 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
             // add the particle effect to the same node the egg is on
             [_highestScoreLabel.parent addChild:explosion];
         }
+        
+        AppDelegate * app = (((AppDelegate*) [UIApplication sharedApplication].delegate));
+        
+        [app ShowIAdBanner];
     }
 }
 
 - (void)restart
 {
+    AppDelegate * app = (((AppDelegate*) [UIApplication sharedApplication].delegate));
+    
+    [app hideIAdBanner];
+    
     CCScene *scene = [CCBReader loadAsScene:@"MainScene"];
     [[CCDirector sharedDirector] replaceScene:scene];
 }

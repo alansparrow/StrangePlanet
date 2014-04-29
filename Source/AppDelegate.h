@@ -26,8 +26,21 @@
 #import <UIKit/UIKit.h>
 #import "cocos2d.h"
 
-@interface AppController : CCAppDelegate
+@class MyiAd;
+
+@interface AppDelegate : CCAppDelegate
 {
+    MyiAd   *mIAd;
+    bool                mIsBannerOn;
+    
+    bool   mBannerOnTop;
 }
+
+@property(nonatomic, assign) bool isBannerOn;
+@property(nonatomic, assign) bool isBannerOnTop;
+
+-(void)ShowIAdBanner;
+-(void)hideIAdBanner;
+-(void)bannerDidFail;
 
 @end

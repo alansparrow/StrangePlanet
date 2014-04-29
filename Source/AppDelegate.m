@@ -27,8 +27,10 @@
 
 #import "AppDelegate.h"
 #import "CCBuilderReader.h"
+#import "MyiAd.h"
+#import "Prefix.pch"
 
-@implementation AppController
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -54,6 +56,22 @@
     
     [self setupCocos2dWithOptions:cocos2dSetup];
     
+    // setup Adv
+    self.isBannerOn=false;
+    
+    if(IS_BANNER_ON_TOP)
+    {
+        self.isBannerOnTop = true;
+    }
+    else
+    {
+        self.isBannerOnTop = false;
+    }
+    
+    
+    mIAd = [[MyiAd alloc] init];
+
+    
     return YES;
 }
 
@@ -61,5 +79,47 @@
 {
     return [CCBReader loadAsScene:@"MenuScene"];
 }
+
+-(void)ShowIAdBanner
+{
+    if([[NSUserDefaults standardUserDefaults] integerForKey:@"adDisabled"]!=0)
+    {
+        self.isBannerOn = false;
+        [self hideIAdBanner];
+        return;
+    }
+    
+    self.isBannerOn = true;
+    
+    if(mIAd)
+    {
+        [mIAd showBannerView];
+    }
+    else
+    {
+        mIAd = [[MyiAd alloc] init];
+    }
+}
+
+
+-(void)hideIAdBanner
+{
+    self.isBannerOn = false;
+    if(mIAd)
+        [mIAd hideBannerView];
+}
+
+-(void)bannerDidFail
+{
+    mIAd = nil;
+    
+#if TARGET_IPHONE_SIMULATOR
+    UIAlertView* alert= [[UIAlertView alloc] initWithTitle: @"Simulator_ShowAlert!" message: @"didFailToReceiveAdWithError:"
+                                                  delegate: NULL cancelButtonTitle: @"OK" otherButtonTitles: NULL];
+	[alert show];
+#endif
+}
+
+
 
 @end
