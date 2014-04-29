@@ -99,7 +99,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     // Create a system sound object representing the sound file
     AudioServicesCreateSystemSoundID(soundFileURLRef, &soundFileObject_Score);
     
-    NSURL *wrongSound = [[NSBundle mainBundle] URLForResource:@"UhOh" withExtension:@"caf"];
+    NSURL *wrongSound = [[NSBundle mainBundle] URLForResource:@"EggBroken" withExtension:@"caf"];
     // Store the URL as a CFURLRef instance
     soundFileURLRef = (__bridge CFURLRef) wrongSound;
     // Create a system sound object representing the sound file
@@ -110,6 +110,12 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     soundFileURLRef = (__bridge CFURLRef) rightSound;
     // Create a system sound object representing the sound file
     AudioServicesCreateSystemSoundID(soundFileURLRef, &soundFileObject_Right);
+    
+    NSURL *newSound = [[NSBundle mainBundle] URLForResource:@"Blip1" withExtension:@"caf"];
+    // Store the URL as a CFURLRef instance
+    soundFileURLRef = (__bridge CFURLRef) newSound;
+    // Create a system sound object representing the sound file
+    AudioServicesCreateSystemSoundID(soundFileURLRef, &soundFileObject_New);
     
 }
 
@@ -156,9 +162,20 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     egg.rotation = _rotateAngle;
     egg.scale = 0.7f;
     
-    NSLog(@"x: %f, y: %f", egg.position.x, egg.position.y);
+
+    //AudioServicesPlaySystemSound(soundFileObject_New);
     
     [_physicsNode addChild:egg];
+    
+    // load particle effect
+    CCParticleSystem *explosion = (CCParticleSystem *) [CCBReader load:@"NewEgg"];
+    // make the particle effect clean itself up, once it is completed
+    explosion.autoRemoveOnFinish = TRUE;
+    // place the particle effect on the seals position
+    explosion.position = egg.position;
+    // add the particle effect to the same node the egg is on
+    [egg.parent addChild:explosion];
+
     [_eggs addObject:egg];
     
 }
@@ -232,9 +249,28 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
         _points--;
         _scoreLabel.string = [NSString stringWithFormat:@"%d", _points];
         AudioServicesPlaySystemSound(soundFileObject_Wrong);
+        // load particle effect
+        CCParticleSystem *explosion = (CCParticleSystem *) [CCBReader load:@"EggRotten"];
+        // make the particle effect clean itself up, once it is completed
+        explosion.autoRemoveOnFinish = TRUE;
+        // place the particle effect on the seals position
+        explosion.position = egg.position;
+        // add the particle effect to the same node the egg is on
+        [egg.parent addChild:explosion];
     } else {
         AudioServicesPlaySystemSound(soundFileObject_Right);
+        // load particle effect
+        CCParticleSystem *explosion = (CCParticleSystem *) [CCBReader load:@"EggExplosion"];
+        // make the particle effect clean itself up, once it is completed
+        explosion.autoRemoveOnFinish = TRUE;
+        // place the particle effect on the seals position
+        explosion.position = egg.position;
+        // add the particle effect to the same node the egg is on
+        [egg.parent addChild:explosion];
     }
+    
+    
+    
     
     [_eggs removeObject:egg];
     [egg removeFromParent];

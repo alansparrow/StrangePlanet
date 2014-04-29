@@ -42,6 +42,11 @@
 		D8D3CB86190FDC310018BE4C /* Ting.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB85190FDC310018BE4C /* Ting.caf */; };
 		D8D3CB8A190FE0EE0018BE4C /* UhOh.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB89190FE0EE0018BE4C /* UhOh.caf */; };
 		D8D3CB90190FE6110018BE4C /* PopRight.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB8F190FE6110018BE4C /* PopRight.caf */; };
+		D8D3CB92190FEE310018BE4C /* GooseSound.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB91190FEE310018BE4C /* GooseSound.caf */; };
+		D8D3CB94190FF0070018BE4C /* EggBroken.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB93190FF0070018BE4C /* EggBroken.caf */; };
+		D8D3CB97190FF00C0018BE4C /* Blip1.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB95190FF00B0018BE4C /* Blip1.caf */; };
+		D8D3CB98190FF00C0018BE4C /* Blip2.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB96190FF00B0018BE4C /* Blip2.caf */; };
+		D8D3CB9A190FF42B0018BE4C /* new_egg.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB99190FF42B0018BE4C /* new_egg.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +110,11 @@
 		D8D3CB85190FDC310018BE4C /* Ting.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ting.caf; path = "Source/Resources/Published-iOS/arts/Ting.caf"; sourceTree = "<group>"; };
 		D8D3CB89190FE0EE0018BE4C /* UhOh.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = UhOh.caf; path = "Source/Resources/Published-iOS/arts/UhOh.caf"; sourceTree = "<group>"; };
 		D8D3CB8F190FE6110018BE4C /* PopRight.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PopRight.caf; path = "Source/Resources/Published-iOS/arts/PopRight.caf"; sourceTree = "<group>"; };
+		D8D3CB91190FEE310018BE4C /* GooseSound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GooseSound.caf; path = "Source/Resources/Published-iOS/arts/GooseSound.caf"; sourceTree = "<group>"; };
+		D8D3CB93190FF0070018BE4C /* EggBroken.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EggBroken.caf; path = "Source/Resources/Published-iOS/arts/EggBroken.caf"; sourceTree = "<group>"; };
+		D8D3CB95190FF00B0018BE4C /* Blip1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Blip1.caf; path = "Source/Resources/Published-iOS/arts/Blip1.caf"; sourceTree = "<group>"; };
+		D8D3CB96190FF00B0018BE4C /* Blip2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Blip2.caf; path = "Source/Resources/Published-iOS/arts/Blip2.caf"; sourceTree = "<group>"; };
+		D8D3CB99190FF42B0018BE4C /* new_egg.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = new_egg.caf; path = "Source/Resources/Published-iOS/arts/new_egg.caf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +149,11 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D8D3CB99190FF42B0018BE4C /* new_egg.caf */,
+				D8D3CB95190FF00B0018BE4C /* Blip1.caf */,
+				D8D3CB96190FF00B0018BE4C /* Blip2.caf */,
+				D8D3CB93190FF0070018BE4C /* EggBroken.caf */,
+				D8D3CB91190FEE310018BE4C /* GooseSound.caf */,
 				D8D3CB8F190FE6110018BE4C /* PopRight.caf */,
 				D8D3CB89190FE0EE0018BE4C /* UhOh.caf */,
 				D8D3CB85190FDC310018BE4C /* Ting.caf */,
@@ -320,13 +335,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D3CB97190FF00C0018BE4C /* Blip1.caf in Resources */,
 				B71F5919188484E7003F4D28 /* Settings.png in Resources */,
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
 				D8D3CB84190FD9170018BE4C /* Punch.caf in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
+				D8D3CB94190FF0070018BE4C /* EggBroken.caf in Resources */,
 				D8D3CB90190FE6110018BE4C /* PopRight.caf in Resources */,
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
+				D8D3CB9A190FF42B0018BE4C /* new_egg.caf in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
 				D8D3CB8A190FE0EE0018BE4C /* UhOh.caf in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
@@ -336,9 +354,11 @@
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
 				D8D3CB80190FD3A20018BE4C /* Jump.caf in Resources */,
+				D8D3CB98190FF00C0018BE4C /* Blip2.caf in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
 				D8D3CB86190FDC310018BE4C /* Ting.caf in Resources */,
+				D8D3CB92190FEE310018BE4C /* GooseSound.caf in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

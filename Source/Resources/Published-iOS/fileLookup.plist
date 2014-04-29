@@ -4,6 +4,16 @@
 <dict>
 	<key>filenames</key>
 	<dict>
+		<key>arts/Blip1.wav</key>
+		<string>arts/Blip1.caf</string>
+		<key>arts/Blip2.wav</key>
+		<string>arts/Blip2.caf</string>
+		<key>arts/Brant Goose-SoundBible.com-1947646975.wav</key>
+		<string>arts/Brant Goose-SoundBible.com-1947646975.caf</string>
+		<key>arts/EggBroken.wav</key>
+		<string>arts/EggBroken.caf</string>
+		<key>arts/Goose-SoundBible.com-81224950.wav</key>
+		<string>arts/Goose-SoundBible.com-81224950.caf</string>
 		<key>arts/Hiccuping-SoundBible.com-777862873.wav</key>
 		<string>arts/Hiccuping-SoundBible.com-777862873.caf</string>
 		<key>arts/Jump.wav</key>
@@ -18,6 +28,8 @@
 		<string>arts/Ting.caf</string>
 		<key>arts/Uh Oh Baby-SoundBible.com-1858856676.wav</key>
 		<string>arts/Uh Oh Baby-SoundBible.com-1858856676.caf</string>
+		<key>arts/new_egg.wav</key>
+		<string>arts/new_egg.caf</string>
 	</dict>
 	<key>metadata</key>
 	<dict>
