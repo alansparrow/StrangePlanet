@@ -47,6 +47,8 @@
 		D8D3CB97190FF00C0018BE4C /* Blip1.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB95190FF00B0018BE4C /* Blip1.caf */; };
 		D8D3CB98190FF00C0018BE4C /* Blip2.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB96190FF00B0018BE4C /* Blip2.caf */; };
 		D8D3CB9A190FF42B0018BE4C /* new_egg.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB99190FF42B0018BE4C /* new_egg.caf */; };
+		D8D3CB9C190FFE440018BE4C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D3CB9B190FFE440018BE4C /* Social.framework */; };
+		D8D3CBA119101A610018BE4C /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D3CBA019101A610018BE4C /* MenuScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,9 @@
 		D8D3CB95190FF00B0018BE4C /* Blip1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Blip1.caf; path = "Source/Resources/Published-iOS/arts/Blip1.caf"; sourceTree = "<group>"; };
 		D8D3CB96190FF00B0018BE4C /* Blip2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Blip2.caf; path = "Source/Resources/Published-iOS/arts/Blip2.caf"; sourceTree = "<group>"; };
 		D8D3CB99190FF42B0018BE4C /* new_egg.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = new_egg.caf; path = "Source/Resources/Published-iOS/arts/new_egg.caf"; sourceTree = "<group>"; };
+		D8D3CB9B190FFE440018BE4C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		D8D3CB9F19101A610018BE4C /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
+		D8D3CBA019101A610018BE4C /* MenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D3CB9C190FFE440018BE4C /* Social.framework in Frameworks */,
 				B737898A1807642B0076A88C /* libcocos2d.a in Frameworks */,
 				B77F1B3217B978D7009739AE /* QuartzCore.framework in Frameworks */,
 				B77F1B3417B978D7009739AE /* OpenGLES.framework in Frameworks */,
@@ -163,6 +169,8 @@
 				D856C16F190EC362007E25BD /* Egg.m */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
+				D8D3CB9F19101A610018BE4C /* MenuScene.h */,
+				D8D3CBA019101A610018BE4C /* MenuScene.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
 				D8D3CB7B190F1C780018BE4C /* Goal.h */,
@@ -223,6 +231,7 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8D3CB9B190FFE440018BE4C /* Social.framework */,
 				D8D3CB81190FD4770018BE4C /* SpriteKit.framework */,
 				B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */,
 				B77F1B3117B978D7009739AE /* QuartzCore.framework */,
@@ -373,6 +382,7 @@
 				D8D3CB7D190F1C780018BE4C /* Goal.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
+				D8D3CBA119101A610018BE4C /* MenuScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				D856C170190EC362007E25BD /* Egg.m in Sources */,
 			);

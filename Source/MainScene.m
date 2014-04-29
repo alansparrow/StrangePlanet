@@ -8,6 +8,7 @@
 
 #import "MainScene.h"
 #import "Egg.h"
+#import <Social/Social.h>
 
 
 
@@ -29,6 +30,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     CCNode *_groundNode;
     CCPhysicsJoint *_eggJoint;
     CCButton *_restartButton;
+    CCButton *_shareButton;
     CCLabelTTF *_scoreLabel;
     
     NSInteger _points;
@@ -293,6 +295,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
         NSLog(@"Game over1");
         _gameOver = TRUE;
         _restartButton.visible = TRUE;
+        _shareButton.visible = TRUE;
         NSLog(@"Game over2");
         CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:0.2f position:ccp(-4, 4)];
         CCActionInterval *reverseMovement = [moveBy reverse];
@@ -317,6 +320,22 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 {
     CCScene *scene = [CCBReader loadAsScene:@"MainScene"];
     [[CCDirector sharedDirector] replaceScene:scene];
+}
+
+- (void)share
+{
+    NSString *text = [NSString stringWithFormat:@"This game will help you fall asleep ^.^ I have just scored %d points. Give it a try ;)", _points];
+    NSURL *url = [NSURL URLWithString:@"https://twitter.com/AlanSparrow9"];
+    NSArray *objectsToShare = @[text, url];
+    
+    UIActivityViewController *controller = [[UIActivityViewController alloc]
+                                            initWithActivityItems:objectsToShare
+                                            applicationActivities:nil];
+    
+    controller.excludedActivityTypes = @[UIActivityTypeAssignToContact];
+    
+    
+    [[CCDirector sharedDirector] presentViewController:controller animated:YES completion:nil];
 }
 
 
