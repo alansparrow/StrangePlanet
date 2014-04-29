@@ -14,6 +14,8 @@
 
 #define ARC4RANDOM_MAX      0x100000000
 
+NSString *const HighestScorePrefKey = @"HighestScore";
+
 typedef NS_ENUM(NSInteger, DrawingOrder) {
     DrawingOrderRing,
     DrawingOrderFox,
@@ -32,8 +34,10 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     CCButton *_restartButton;
     CCButton *_shareButton;
     CCLabelTTF *_scoreLabel;
+    CCLabelTTF *_highestScoreLabel;
     
     NSInteger _points;
+    NSInteger _highestScore;
     BOOL _gameOver;
     CGFloat _omega;
     CGFloat _radius;
@@ -118,6 +122,15 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     soundFileURLRef = (__bridge CFURLRef) newSound;
     // Create a system sound object representing the sound file
     AudioServicesCreateSystemSoundID(soundFileURLRef, &soundFileObject_New);
+    
+    // Check highest score
+    _highestScore = [[NSUserDefaults standardUserDefaults] integerForKey:HighestScorePrefKey];
+    
+    if (_highestScore > 0) {
+        _highestScoreLabel.string = [NSString stringWithFormat:@"%d", _highestScore];
+    } else {
+        _highestScoreLabel.string = [NSString stringWithFormat:@"%d", 0];
+    }
     
 }
 
@@ -291,18 +304,14 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 - (void)gameOver
 {
     if (!_gameOver) {
-        //[self restart];
-        NSLog(@"Game over1");
         _gameOver = TRUE;
         _restartButton.visible = TRUE;
         _shareButton.visible = TRUE;
-        NSLog(@"Game over2");
         CCActionMoveBy *moveBy = [CCActionMoveBy actionWithDuration:0.2f position:ccp(-4, 4)];
         CCActionInterval *reverseMovement = [moveBy reverse];
         CCActionSequence *shakeSequence = [CCActionSequence actionWithArray:@[moveBy, reverseMovement]];
         CCActionEaseBounce *bounce = [CCActionEaseBounce actionWithAction:shakeSequence];
         [self runAction:bounce];
-        NSLog(@"Game over3");
         
         for (Egg *egg in _eggs) {
             CGPoint unitVector = ccpNormalize(ccp(egg.position.x, egg.position.y));
@@ -312,7 +321,17 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
             [_fox.physicsBody applyImpulse:ccpMult(unitVector, 160)];
         }
         
-        NSLog(@"Game over4");
+        if (_points > _highestScore) {
+            [[NSUserDefaults standardUserDefaults] setInteger:_points forKey:HighestScorePrefKey];
+            // load particle effect
+            CCParticleSystem *explosion = (CCParticleSystem *) [CCBReader load:@"HighScoreExplosion"];
+            // make the particle effect clean itself up, once it is completed
+            explosion.autoRemoveOnFinish = TRUE;
+            // place the particle effect on the seals position
+            explosion.position = _highestScoreLabel.position;
+            // add the particle effect to the same node the egg is on
+            [_highestScoreLabel.parent addChild:explosion];
+        }
     }
 }
 
