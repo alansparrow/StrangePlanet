@@ -1317,7 +1317,7 @@
 						<string>String</string>
 						<key>value</key>
 						<array>
-							<string>Restart</string>
+							<string>Ok     </string>
 							<false/>
 						</array>
 					</dict>
@@ -1511,6 +1511,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>baseClass</key>

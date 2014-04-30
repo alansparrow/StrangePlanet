@@ -86,7 +86,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     _groundNode.physicsBody.collisionType = @"ground";
     
     // setup sound effect
-
+    
     
     NSURL *jumpSound = [[NSBundle mainBundle] URLForResource:@"Jump" withExtension:@"caf"];
     // Store the URL as a CFURLRef instance
@@ -133,6 +133,10 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
         _highestScoreLabel.string = [NSString stringWithFormat:@"%d", 0];
     }
     
+    
+    AppDelegate * app = (((AppDelegate*) [UIApplication sharedApplication].delegate));
+    
+    [app hideIAdBanner];
 }
 
 - (void)update:(CCTime)delta
@@ -144,11 +148,15 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
         _rotateAngle = 105.f - atan2(_fox.position.y, _fox.position.x) * 180.f/M_PI;
         _fox.rotation = _rotateAngle;
         
-        // Ask if we can place new egg
-        _allowToPlaceEgg = arc4random() % 100;
-        if (_allowToPlaceEgg == 0) {
+        if ([_eggs count] == 0) {
             [self placeRandomEgg];
-            NSLog(@"Place egg");
+        } else {
+            // Ask if we can place new egg
+            _allowToPlaceEgg = arc4random() % 100;
+            if (_allowToPlaceEgg == 0) {
+                [self placeRandomEgg];
+                NSLog(@"Place egg");
+            }
         }
     }
 }
@@ -178,7 +186,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     egg.rotation = _rotateAngle;
     egg.scale = 0.7f;
     
-
+    
     //AudioServicesPlaySystemSound(soundFileObject_New);
     
     [_physicsNode addChild:egg];
@@ -191,7 +199,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     explosion.position = egg.position;
     // add the particle effect to the same node the egg is on
     [egg.parent addChild:explosion];
-
+    
     [_eggs addObject:egg];
     
 }
@@ -226,7 +234,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
             
             CGPoint unitVector = ccpNormalize(ccp(nextJumpEgg.position.x, nextJumpEgg.position.y));
             
-
+            
             CCActionMoveBy *moveBy1 = [CCActionMoveBy actionWithDuration:0.6f position:ccpMult(unitVector, 70)];
             CCActionMoveBy *moveBy2 = [CCActionMoveBy actionWithDuration:0.8f position:ccpMult(unitVector, -100)];
             CCActionSequence *moveSequence = [CCActionSequence actionWithArray:@[moveBy1, moveBy2]];
@@ -246,7 +254,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     _scoreLabel.string = [NSString stringWithFormat:@"%d", _points];
     
     // Goal is get
-
+    
     Goal *castGoal = (Goal *) goal;
     castGoal.isGetGoal = TRUE;
     
@@ -346,7 +354,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     
     [app hideIAdBanner];
     
-    CCScene *scene = [CCBReader loadAsScene:@"MainScene"];
+    CCScene *scene = [CCBReader loadAsScene:@"MenuScene"];
     [[CCDirector sharedDirector] replaceScene:scene];
 }
 

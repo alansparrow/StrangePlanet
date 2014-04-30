@@ -7,12 +7,15 @@
 //
 
 #import "MenuScene.h"
+#import "AppDelegate.h"
 
 @implementation MenuScene
 
 - (void)didLoadFromCCB
 {
-    CCButton *_playButton;
+    AppDelegate * app = (((AppDelegate*) [UIApplication sharedApplication].delegate));
+    
+    [app ShowIAdBanner];
 }
 
 - (void)play
