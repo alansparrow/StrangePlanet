@@ -5,7 +5,7 @@
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
-	<integer>0</integer>
+	<integer>2</integer>
 	<key>currentSequenceId</key>
 	<integer>0</integer>
 	<key>docDimensionsType</key>
@@ -54,9 +54,9 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
-							<real>0.5</real>
-							<integer>1</integer>
+							<real>0.0</real>
+							<real>0.0</real>
+							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
 						</array>
@@ -68,8 +68,8 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
-							<real>0.5</real>
+							<real>0.0</real>
+							<real>0.0</real>
 						</array>
 					</dict>
 					<dict>
@@ -79,8 +79,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
+							<real>1.5</real>
+							<real>1.2000000476837158</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -93,7 +93,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>arts/bg.png</string>
+							<string>art3/bg.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -141,8 +141,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.53824996948242188</real>
-							<real>0.8345070481300354</real>
+							<real>0.71100705862045288</real>
+							<real>0.85000002384185791</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -180,7 +180,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>arts/cloud1.png</string>
+							<string>art3/cloud1.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -228,8 +228,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.64349997043609619</real>
-							<real>0.17753520607948303</real>
+							<real>0.50874996185302734</real>
+							<real>0.17704224586486816</real>
 							<integer>0</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -267,7 +267,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>arts/cloud2.png</string>
+							<string>art3/cloud2.png</string>
 						</array>
 					</dict>
 					<dict>
@@ -320,11 +320,11 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>0.0</real>
-									<real>0.0</real>
+									<real>-0.01875000074505806</real>
+									<real>-0.0042253523133695126</real>
 									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
+									<integer>2</integer>
+									<integer>2</integer>
 								</array>
 							</dict>
 							<dict>
@@ -359,7 +359,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>arts/circle3.png</string>
+									<string>art3/ring.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -725,8 +725,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>0.0</real>
-									<real>0.0</real>
+									<real>1.1622904860786321e-09</real>
+									<real>0.014788733795285225</real>
 									<integer>0</integer>
 									<integer>2</integer>
 									<integer>2</integer>
@@ -782,7 +782,7 @@
 								<string>FloatScale</string>
 								<key>value</key>
 								<array>
-									<real>60</real>
+									<real>70</real>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -930,8 +930,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>0.0</real>
-									<real>-0.079999998211860657</real>
+									<real>0.0013790797675028443</real>
+									<real>-0.07504727691411972</real>
 									<integer>0</integer>
 									<integer>2</integer>
 									<integer>2</integer>
@@ -987,7 +987,7 @@
 								<string>FloatScale</string>
 								<key>value</key>
 								<array>
-									<real>20</real>
+									<real>30</real>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -1511,8 +1511,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>baseClass</key>

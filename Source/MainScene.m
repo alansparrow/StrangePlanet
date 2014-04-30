@@ -235,8 +235,8 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
             CGPoint unitVector = ccpNormalize(ccp(nextJumpEgg.position.x, nextJumpEgg.position.y));
             
             
-            CCActionMoveBy *moveBy1 = [CCActionMoveBy actionWithDuration:0.6f position:ccpMult(unitVector, 60)];
-            CCActionMoveBy *moveBy2 = [CCActionMoveBy actionWithDuration:0.6f position:ccpMult(unitVector, -100)];
+            CCActionMoveBy *moveBy1 = [CCActionMoveBy actionWithDuration:0.6f position:ccpMult(unitVector, 70)];
+            CCActionMoveBy *moveBy2 = [CCActionMoveBy actionWithDuration:0.6f position:ccpMult(unitVector, -90)];
             CCActionSequence *moveSequence = [CCActionSequence actionWithArray:@[moveBy1, moveBy2]];
             [nextJumpEgg runAction:moveSequence];
             

@@ -4,6 +4,22 @@
 <dict>
 	<key>filenames</key>
 	<dict>
+		<key>art3/circle.psd</key>
+		<string>art3/circle.png</string>
+		<key>art3/cloud1.psd</key>
+		<string>art3/cloud1.png</string>
+		<key>art3/cloud2.psd</key>
+		<string>art3/cloud2.png</string>
+		<key>art3/egg1.psd</key>
+		<string>art3/egg1.png</string>
+		<key>art3/egg2.psd</key>
+		<string>art3/egg2.png</string>
+		<key>art3/fox1.psd</key>
+		<string>art3/fox1.png</string>
+		<key>art3/fox2.psd</key>
+		<string>art3/fox2.png</string>
+		<key>art3/ring.psd</key>
+		<string>art3/ring.png</string>
 		<key>arts/Blip1.wav</key>
 		<string>arts/Blip1.caf</string>
 		<key>arts/Blip2.wav</key>

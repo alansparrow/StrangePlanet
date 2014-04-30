@@ -42,7 +42,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/egg11.png</string>
+								<string>art3/egg1.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -60,7 +60,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/egg22.png</string>
+								<string>art3/egg2.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -78,7 +78,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/egg11.png</string>
+								<string>art3/egg1.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -96,7 +96,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/egg22.png</string>
+								<string>art3/egg2.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -114,7 +114,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/egg11.png</string>
+								<string>art3/egg1.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -132,7 +132,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/egg22.png</string>
+								<string>art3/egg2.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -150,7 +150,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/egg11.png</string>
+								<string>art3/egg1.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -168,7 +168,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/egg22.png</string>
+								<string>art3/egg2.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -186,7 +186,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/egg11.png</string>
+								<string>art3/egg1.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -315,8 +315,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -414,7 +412,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>arts/egg22.png</string>
+					<string>art3/egg1.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -488,7 +486,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.3333333432674408</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

@@ -42,7 +42,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/fox1.png</string>
+								<string>art3/fox1.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -60,7 +60,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/fox2.png</string>
+								<string>art3/fox2.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -78,7 +78,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/fox1.png</string>
+								<string>art3/fox1.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -96,7 +96,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/fox2.png</string>
+								<string>art3/fox2.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -114,7 +114,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/fox1.png</string>
+								<string>art3/fox1.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -132,7 +132,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/fox2.png</string>
+								<string>art3/fox2.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -150,7 +150,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>arts/fox1.png</string>
+								<string>art3/fox1.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -195,8 +195,8 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>1.99609375</real>
-					<real>25</real>
+					<real>-0.999969482421875</real>
+					<real>21</real>
 				</array>
 				<array>
 					<real>18</real>
@@ -215,8 +215,8 @@
 					<real>16</real>
 				</array>
 				<array>
-					<real>84.99609375</real>
-					<real>45</real>
+					<real>80.000030517578125</real>
+					<real>40</real>
 				</array>
 				<array>
 					<real>68.99609375</real>
@@ -289,7 +289,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>arts/fox1.png</string>
+					<string>art3/fox1.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -306,8 +306,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 		<key>seqExpanded</key>
 		<true/>
 	</dict>
@@ -365,7 +363,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.80000001192092896</real>
+			<real>2</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

@@ -43,9 +43,7 @@
 		D8D3CB80190FD3A20018BE4C /* Jump.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB7F190FD3A20018BE4C /* Jump.caf */; };
 		D8D3CB84190FD9170018BE4C /* Punch.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB83190FD9170018BE4C /* Punch.caf */; };
 		D8D3CB86190FDC310018BE4C /* Ting.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB85190FDC310018BE4C /* Ting.caf */; };
-		D8D3CB8A190FE0EE0018BE4C /* UhOh.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB89190FE0EE0018BE4C /* UhOh.caf */; };
 		D8D3CB90190FE6110018BE4C /* PopRight.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB8F190FE6110018BE4C /* PopRight.caf */; };
-		D8D3CB92190FEE310018BE4C /* GooseSound.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB91190FEE310018BE4C /* GooseSound.caf */; };
 		D8D3CB94190FF0070018BE4C /* EggBroken.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB93190FF0070018BE4C /* EggBroken.caf */; };
 		D8D3CB97190FF00C0018BE4C /* Blip1.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB95190FF00B0018BE4C /* Blip1.caf */; };
 		D8D3CB98190FF00C0018BE4C /* Blip2.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB96190FF00B0018BE4C /* Blip2.caf */; };
@@ -117,9 +115,7 @@
 		D8D3CB81190FD4770018BE4C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		D8D3CB83190FD9170018BE4C /* Punch.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Punch.caf; path = "Source/Resources/Published-iOS/arts/Punch.caf"; sourceTree = "<group>"; };
 		D8D3CB85190FDC310018BE4C /* Ting.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ting.caf; path = "Source/Resources/Published-iOS/arts/Ting.caf"; sourceTree = "<group>"; };
-		D8D3CB89190FE0EE0018BE4C /* UhOh.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = UhOh.caf; path = "Source/Resources/Published-iOS/arts/UhOh.caf"; sourceTree = "<group>"; };
 		D8D3CB8F190FE6110018BE4C /* PopRight.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PopRight.caf; path = "Source/Resources/Published-iOS/arts/PopRight.caf"; sourceTree = "<group>"; };
-		D8D3CB91190FEE310018BE4C /* GooseSound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = GooseSound.caf; path = "Source/Resources/Published-iOS/arts/GooseSound.caf"; sourceTree = "<group>"; };
 		D8D3CB93190FF0070018BE4C /* EggBroken.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EggBroken.caf; path = "Source/Resources/Published-iOS/arts/EggBroken.caf"; sourceTree = "<group>"; };
 		D8D3CB95190FF00B0018BE4C /* Blip1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Blip1.caf; path = "Source/Resources/Published-iOS/arts/Blip1.caf"; sourceTree = "<group>"; };
 		D8D3CB96190FF00B0018BE4C /* Blip2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Blip2.caf; path = "Source/Resources/Published-iOS/arts/Blip2.caf"; sourceTree = "<group>"; };
@@ -167,9 +163,7 @@
 				D8D3CB95190FF00B0018BE4C /* Blip1.caf */,
 				D8D3CB96190FF00B0018BE4C /* Blip2.caf */,
 				D8D3CB93190FF0070018BE4C /* EggBroken.caf */,
-				D8D3CB91190FEE310018BE4C /* GooseSound.caf */,
 				D8D3CB8F190FE6110018BE4C /* PopRight.caf */,
-				D8D3CB89190FE0EE0018BE4C /* UhOh.caf */,
 				D8D3CB85190FDC310018BE4C /* Ting.caf */,
 				D8D3CB83190FD9170018BE4C /* Punch.caf */,
 				D8D3CB7F190FD3A20018BE4C /* Jump.caf */,
@@ -370,7 +364,6 @@
 				D8509B6B1910742500153CD3 /* iPhone@2x.png in Resources */,
 				D8509B47191067D600153CD3 /* Default-Landscape~ipad.png in Resources */,
 				D8509B46191067D600153CD3 /* Default-568h@2x.png in Resources */,
-				D8D3CB8A190FE0EE0018BE4C /* UhOh.caf in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				D8509B641910742500153CD3 /* iPad-old.png in Resources */,
 				D8509B661910742500153CD3 /* iPad.png in Resources */,
@@ -381,7 +374,6 @@
 				D8509B49191067D600153CD3 /* Default@2x.png in Resources */,
 				D8509B6D1910742500153CD3 /* Settings@2x.png in Resources */,
 				D8D3CB86190FDC310018BE4C /* Ting.caf in Resources */,
-				D8D3CB92190FEE310018BE4C /* GooseSound.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
