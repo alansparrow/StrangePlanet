@@ -1818,7 +1818,7 @@
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>title1</string>
+				<string>Incredible Eggs1</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -1865,8 +1865,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1.1000000238418579</real>
-							<real>1.1000000238418579</real>
+							<real>0.80000001192092896</real>
+							<real>1</real>
 							<false/>
 							<integer>0</integer>
 						</array>
@@ -1879,7 +1879,7 @@
 						<key>value</key>
 						<array>
 							<string></string>
-							<string>arts/title1.png</string>
+							<string>arts/Incredible Eggs1.png</string>
 						</array>
 					</dict>
 					<dict>
