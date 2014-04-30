@@ -1235,7 +1235,7 @@
 						<key>value</key>
 						<array>
 							<real>0.75</real>
-							<real>0.20000000298023224</real>
+							<real>0.20000001788139343</real>
 							<integer>1</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -1317,7 +1317,7 @@
 						<string>String</string>
 						<key>value</key>
 						<array>
-							<string>Ok     </string>
+							<string>Ok        </string>
 							<false/>
 						</array>
 					</dict>
@@ -1553,7 +1553,7 @@
 						<key>value</key>
 						<array>
 							<real>0.25</real>
-							<real>0.20000000298023224</real>
+							<real>0.20000001788139343</real>
 							<integer>1</integer>
 							<integer>2</integer>
 							<integer>2</integer>
@@ -1635,7 +1635,7 @@
 						<string>String</string>
 						<key>value</key>
 						<array>
-							<string>Share  </string>
+							<string>Share   </string>
 							<false/>
 						</array>
 					</dict>
