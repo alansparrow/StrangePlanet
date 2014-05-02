@@ -66,8 +66,13 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     
     _eggs = [NSMutableArray array];
     _omega = -1.3f;
-    _radius = 115.f;
-    _time = -3.f;
+    
+    // radius
+    _radius = 20 + _ring.boundingBox.size.width / 2;
+    
+    // start angle
+    _time = arc4random() % 1000;
+    
     _rotateAngle = 0.f;
     
     _ring = DrawingOrderRing;
@@ -84,6 +89,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     //_physicsNode.debugDraw = TRUE;
     
     _groundNode.physicsBody.collisionType = @"ground";
+
     
     // setup sound effect
     
@@ -216,6 +222,10 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
         Egg *nextJumpEgg = nil;
         for (Egg *egg in _eggs) {
             float tmpDistance = ccpDistance(_fox.position, egg.position);
+
+            // Add cmp here
+            
+            
             if (tmpDistance < minDistance && !egg.isTouch) {
                 minDistance = tmpDistance;
                 nextJumpEgg = egg;
@@ -235,8 +245,8 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
             CGPoint unitVector = ccpNormalize(ccp(nextJumpEgg.position.x, nextJumpEgg.position.y));
             
             
-            CCActionMoveBy *moveBy1 = [CCActionMoveBy actionWithDuration:0.6f position:ccpMult(unitVector, 70)];
-            CCActionMoveBy *moveBy2 = [CCActionMoveBy actionWithDuration:0.6f position:ccpMult(unitVector, -90)];
+            CCActionMoveBy *moveBy1 = [CCActionMoveBy actionWithDuration:0.5f position:ccpMult(unitVector, 70)];
+            CCActionMoveBy *moveBy2 = [CCActionMoveBy actionWithDuration:0.5f position:ccpMult(unitVector, -100)];
             CCActionSequence *moveSequence = [CCActionSequence actionWithArray:@[moveBy1, moveBy2]];
             [nextJumpEgg runAction:moveSequence];
             
@@ -360,8 +370,8 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 
 - (void)share
 {
-    NSString *text = [NSString stringWithFormat:@"This game will help you fall asleep ^.^ I have just scored %d points. Give it a try ;)", _points];
-    NSURL *url = [NSURL URLWithString:@"https://twitter.com/AlanSparrow9"];
+    NSString *text = [NSString stringWithFormat:@"[%d]This game will help you feel happy and easy to fall asleep ^.^ Give it a try ;)", _points];
+    NSURL *url = [NSURL URLWithString:@"http://goo.gl/wJXxT8"];
     NSArray *objectsToShare = @[text, url];
     
     UIActivityViewController *controller = [[UIActivityViewController alloc]

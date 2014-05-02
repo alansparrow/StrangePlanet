@@ -48,6 +48,8 @@
 
 - (void)bannerViewDidLoadAd:(ADBannerView *)banner
 {
+    NSLog(@"New adv is loaded!");
+    
     mIsLoaded = true;
     
     [self showBannerView];
