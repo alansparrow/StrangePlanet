@@ -46,11 +46,6 @@
     
 }
 
-- (void)rate
-{
-    
-}
-
 - (void)gameCenter
 {
     [self showGameCenterButtonPressed];
