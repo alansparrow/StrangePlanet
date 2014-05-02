@@ -39,6 +39,9 @@
 		D8509B6D1910742500153CD3 /* Settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8509B631910742500153CD3 /* Settings@2x.png */; };
 		D8509B721910DDE300153CD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8509B711910DDE300153CD3 /* Images.xcassets */; };
 		D856C170190EC362007E25BD /* Egg.m in Sources */ = {isa = PBXBuildFile; fileRef = D856C16F190EC362007E25BD /* Egg.m */; };
+		D866C13A19141D8D00B2A5A5 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D866C13919141D8D00B2A5A5 /* GameKit.framework */; };
+		D866C13D19141DC100B2A5A5 /* GameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D866C13C19141DC100B2A5A5 /* GameCenter.m */; };
+		D866C1401914293F00B2A5A5 /* GCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D866C13F1914293F00B2A5A5 /* GCHelper.m */; };
 		D8D3CB7D190F1C780018BE4C /* Goal.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D3CB7C190F1C780018BE4C /* Goal.m */; };
 		D8D3CB80190FD3A20018BE4C /* Jump.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB7F190FD3A20018BE4C /* Jump.caf */; };
 		D8D3CB84190FD9170018BE4C /* Punch.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB83190FD9170018BE4C /* Punch.caf */; };
@@ -109,6 +112,11 @@
 		D8509B711910DDE300153CD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Incredible Eggs/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		D856C16E190EC362007E25BD /* Egg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Egg.h; sourceTree = "<group>"; };
 		D856C16F190EC362007E25BD /* Egg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Egg.m; sourceTree = "<group>"; };
+		D866C13919141D8D00B2A5A5 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		D866C13B19141DC100B2A5A5 /* GameCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenter.h; sourceTree = "<group>"; };
+		D866C13C19141DC100B2A5A5 /* GameCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenter.m; sourceTree = "<group>"; };
+		D866C13E1914293F00B2A5A5 /* GCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCHelper.h; sourceTree = "<group>"; };
+		D866C13F1914293F00B2A5A5 /* GCHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCHelper.m; sourceTree = "<group>"; };
 		D8D3CB7B190F1C780018BE4C /* Goal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goal.h; sourceTree = "<group>"; };
 		D8D3CB7C190F1C780018BE4C /* Goal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goal.m; sourceTree = "<group>"; };
 		D8D3CB7F190FD3A20018BE4C /* Jump.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Jump.caf; path = "Source/Resources/Published-iOS/arts/Jump.caf"; sourceTree = "<group>"; };
@@ -130,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D866C13A19141D8D00B2A5A5 /* GameKit.framework in Frameworks */,
 				D8509B5819106DC100153CD3 /* iAd.framework in Frameworks */,
 				D8D3CB9C190FFE440018BE4C /* Social.framework in Frameworks */,
 				B737898A1807642B0076A88C /* libcocos2d.a in Frameworks */,
@@ -159,6 +168,7 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D866C141191440A600B2A5A5 /* Reference files */,
 				D8D3CB99190FF42B0018BE4C /* new_egg.caf */,
 				D8D3CB95190FF00B0018BE4C /* Blip1.caf */,
 				D8D3CB96190FF00B0018BE4C /* Blip2.caf */,
@@ -177,6 +187,8 @@
 				D8D3CBA019101A610018BE4C /* MenuScene.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				D866C13E1914293F00B2A5A5 /* GCHelper.h */,
+				D866C13F1914293F00B2A5A5 /* GCHelper.m */,
 				D8D3CB7B190F1C780018BE4C /* Goal.h */,
 				D8D3CB7C190F1C780018BE4C /* Goal.m */,
 			);
@@ -235,6 +247,7 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D866C13919141D8D00B2A5A5 /* GameKit.framework */,
 				D8509B5719106DC100153CD3 /* iAd.framework */,
 				D8D3CB9B190FFE440018BE4C /* Social.framework */,
 				D8D3CB81190FD4770018BE4C /* SpriteKit.framework */,
@@ -270,6 +283,15 @@
 				B73789861807631A0076A88C /* Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D866C141191440A600B2A5A5 /* Reference files */ = {
+			isa = PBXGroup;
+			children = (
+				D866C13B19141DC100B2A5A5 /* GameCenter.h */,
+				D866C13C19141DC100B2A5A5 /* GameCenter.m */,
+			);
+			name = "Reference files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,8 +406,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D866C1401914293F00B2A5A5 /* GCHelper.m in Sources */,
 				D8D3CB7D190F1C780018BE4C /* Goal.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
+				D866C13D19141DC100B2A5A5 /* GameCenter.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				D8509B5619106C6100153CD3 /* MyiAd.m in Sources */,
 				D8D3CBA119101A610018BE4C /* MenuScene.m in Sources */,

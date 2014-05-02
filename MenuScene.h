@@ -7,7 +7,10 @@
 //
 
 #import "CCNode.h"
+#import <GameKit/GameKit.h>
 
-@interface MenuScene : CCNode
+#define GC_INDENTIFIER @"com.alansparrow.incredibleeggs"
+
+@interface MenuScene : CCNode <GKLeaderboardViewControllerDelegate>
 
 @end

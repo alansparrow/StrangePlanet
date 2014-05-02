@@ -10,6 +10,7 @@
 #import "Egg.h"
 #import <Social/Social.h>
 #import "AppDelegate.h"
+#import "GCHelper.h"
 
 
 
@@ -261,6 +262,9 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 {
     NSLog(@"Goal!!");
     _points++;
+    // Check for achievement
+    [[GCHelper sharedInstance] checkAchievement:_points];
+    
     _scoreLabel.string = [NSString stringWithFormat:@"%d", _points];
     
     // Goal is get
@@ -341,7 +345,12 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
         }
         
         if (_points > _highestScore) {
+            // Store highest score into user iPhone
             [[NSUserDefaults standardUserDefaults] setInteger:_points forKey:HighestScorePrefKey];
+            // Upload highest score to Game Center
+            [[GCHelper sharedInstance] reportScore:_points forLeaderboardID:[GCHelper sharedInstance].identifier];
+            
+            
             // load particle effect
             CCParticleSystem *explosion = (CCParticleSystem *) [CCBReader load:@"HighScoreExplosion"];
             // make the particle effect clean itself up, once it is completed
@@ -370,7 +379,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 
 - (void)share
 {
-    NSString *text = [NSString stringWithFormat:@"[%d]This game will help you feel happy and easy to fall asleep ^.^ Give it a try ;)", _points];
+    NSString *text = [NSString stringWithFormat:@"[%d]This game will make you feel happy and easy to fall asleep ^.^ Give it a try ;)", _points];
     NSURL *url = [NSURL URLWithString:@"http://goo.gl/wJXxT8"];
     NSArray *objectsToShare = @[text, url];
     
@@ -383,6 +392,8 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     
     [[CCDirector sharedDirector] presentViewController:controller animated:YES completion:nil];
 }
+
+
 
 
 @end
