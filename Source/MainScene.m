@@ -11,6 +11,7 @@
 #import <Social/Social.h>
 #import "AppDelegate.h"
 #import "GCHelper.h"
+#import "SharedInfo.h"
 
 
 
@@ -369,6 +370,9 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 
 - (void)restart
 {
+    // Don't bg play music anymore
+    [[SharedInfo sharedInfo] setIsMusicPlayed:TRUE];
+    
     AppDelegate * app = (((AppDelegate*) [UIApplication sharedApplication].delegate));
     
     [app hideIAdBanner];

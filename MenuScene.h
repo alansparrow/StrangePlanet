@@ -8,9 +8,11 @@
 
 #import "CCNode.h"
 #import <GameKit/GameKit.h>
-
+#import <AVFoundation/AVFoundation.h>
 
 
 @interface MenuScene : CCNode <GKLeaderboardViewControllerDelegate>
+
+@property (nonatomic) AVAudioPlayer * backgroundMusicPlayer;
 
 @end

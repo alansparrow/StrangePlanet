@@ -30,14 +30,15 @@
 
 @interface AppDelegate : CCAppDelegate
 {
-    MyiAd   *mIAd;
-    bool                mIsBannerOn;
+    MyiAd *mIAd;
+    bool mIsBannerOn;
     
-    bool   mBannerOnTop;
+    bool mBannerOnTop;
 }
 
 @property(nonatomic, assign) bool isBannerOn;
 @property(nonatomic, assign) bool isBannerOnTop;
+@property (nonatomic) bool isMusic;
 
 -(void)ShowIAdBanner;
 -(void)hideIAdBanner;

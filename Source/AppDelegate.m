@@ -31,6 +31,7 @@
 #import "Prefix.pch"
 #import "Appirater.h"
 #import "AppInfo.h"
+#import "SharedInfo.h"
 
 @implementation AppDelegate
 
@@ -39,12 +40,15 @@
     // Appirater
     [Appirater setAppId:APP_ID];
     [Appirater setDaysUntilPrompt:1];
-    [Appirater setUsesUntilPrompt:10];
+    [Appirater setUsesUntilPrompt:5];
     [Appirater setSignificantEventsUntilPrompt:-1];
     [Appirater setTimeBeforeReminding:2];
     
     // Debug mode
     //[Appirater setDebug:YES];
+    
+    // Play Music the first time
+    [[SharedInfo sharedInfo] setIsMusicPlayed:FALSE];
     
     // Configure Cocos2d with the options set in SpriteBuilder
     NSString* configPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Published-iOS"]; // TODO: add support for Published-Android support
@@ -89,12 +93,12 @@
     
     return YES;
 }
-
+/*
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     [Appirater appEnteredForeground:YES];
 }
-
+*/
 - (CCScene*) startScene
 {
     return [CCBReader loadAsScene:@"MenuScene"];

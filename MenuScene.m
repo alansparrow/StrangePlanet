@@ -10,8 +10,11 @@
 #import "AppDelegate.h"
 #import "GCHelper.h"
 #import "AppInfo.h"
+#import "SharedInfo.h"
+#import <AVFoundation/AVFoundation.h>
 
 @implementation MenuScene
+
 
 - (void)didLoadFromCCB
 {
@@ -21,6 +24,18 @@
     AppDelegate * app = (((AppDelegate*) [UIApplication sharedApplication].delegate));
     
     [app ShowIAdBanner];
+    
+    // Play music only the first time
+    if (![[SharedInfo sharedInfo] isMusicPlayed]) {
+        NSError *error;
+        NSURL * backgroundMusicURL = [[NSBundle mainBundle] URLForResource:@"meow" withExtension:@"m4a"];
+        self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundMusicURL error:&error];
+        self.backgroundMusicPlayer.numberOfLoops = -1;
+        [self.backgroundMusicPlayer prepareToPlay];
+        [self.backgroundMusicPlayer play];
+        NSLog(@"Play music");
+
+    }
 }
 
 - (void)play
