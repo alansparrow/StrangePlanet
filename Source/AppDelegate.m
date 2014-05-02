@@ -29,11 +29,23 @@
 #import "CCBuilderReader.h"
 #import "MyiAd.h"
 #import "Prefix.pch"
+#import "Appirater.h"
+#import "AppInfo.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Appirater
+    [Appirater setAppId:APP_ID];
+    [Appirater setDaysUntilPrompt:1];
+    [Appirater setUsesUntilPrompt:10];
+    [Appirater setSignificantEventsUntilPrompt:-1];
+    [Appirater setTimeBeforeReminding:2];
+    
+    // Debug mode
+    //[Appirater setDebug:YES];
+    
     // Configure Cocos2d with the options set in SpriteBuilder
     NSString* configPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Published-iOS"]; // TODO: add support for Published-Android support
     configPath = [configPath stringByAppendingPathComponent:@"configCocos2d.plist"];
@@ -70,9 +82,17 @@
     
     
     mIAd = [[MyiAd alloc] init];
+    
+    // App did launch
+    [Appirater appLaunched:YES];
 
     
     return YES;
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
+    [Appirater appEnteredForeground:YES];
 }
 
 - (CCScene*) startScene

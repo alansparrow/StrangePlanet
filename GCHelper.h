@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define FOX_AVOIDER @"com.alansparrow.incredibleeggs.foxavoider"
-#define BABY_EGG @"com.alansparrow.incredibleeggs"
+
 
 @interface GCHelper : NSObject
 {

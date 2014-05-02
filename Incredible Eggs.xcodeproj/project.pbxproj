@@ -42,6 +42,10 @@
 		D866C13A19141D8D00B2A5A5 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D866C13919141D8D00B2A5A5 /* GameKit.framework */; };
 		D866C13D19141DC100B2A5A5 /* GameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D866C13C19141DC100B2A5A5 /* GameCenter.m */; };
 		D866C1401914293F00B2A5A5 /* GCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D866C13F1914293F00B2A5A5 /* GCHelper.m */; };
+		D866C14419144A7900B2A5A5 /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = D866C14319144A7900B2A5A5 /* Appirater.m */; };
+		D866C14719144ABE00B2A5A5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D866C14619144ABE00B2A5A5 /* CFNetwork.framework */; };
+		D866C14919144AC600B2A5A5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D866C14819144AC600B2A5A5 /* SystemConfiguration.framework */; };
+		D866C14B19144ACD00B2A5A5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D866C14A19144ACD00B2A5A5 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D8D3CB7D190F1C780018BE4C /* Goal.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D3CB7C190F1C780018BE4C /* Goal.m */; };
 		D8D3CB80190FD3A20018BE4C /* Jump.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB7F190FD3A20018BE4C /* Jump.caf */; };
 		D8D3CB84190FD9170018BE4C /* Punch.caf in Resources */ = {isa = PBXBuildFile; fileRef = D8D3CB83190FD9170018BE4C /* Punch.caf */; };
@@ -117,6 +121,13 @@
 		D866C13C19141DC100B2A5A5 /* GameCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenter.m; sourceTree = "<group>"; };
 		D866C13E1914293F00B2A5A5 /* GCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCHelper.h; sourceTree = "<group>"; };
 		D866C13F1914293F00B2A5A5 /* GCHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCHelper.m; sourceTree = "<group>"; };
+		D866C14219144A7900B2A5A5 /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
+		D866C14319144A7900B2A5A5 /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
+		D866C14519144A9300B2A5A5 /* AppiraterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppiraterDelegate.h; sourceTree = "<group>"; };
+		D866C14619144ABE00B2A5A5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D866C14819144AC600B2A5A5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D866C14A19144ACD00B2A5A5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D866C14C19144B5500B2A5A5 /* AppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
 		D8D3CB7B190F1C780018BE4C /* Goal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Goal.h; sourceTree = "<group>"; };
 		D8D3CB7C190F1C780018BE4C /* Goal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Goal.m; sourceTree = "<group>"; };
 		D8D3CB7F190FD3A20018BE4C /* Jump.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Jump.caf; path = "Source/Resources/Published-iOS/arts/Jump.caf"; sourceTree = "<group>"; };
@@ -138,6 +149,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D866C14B19144ACD00B2A5A5 /* StoreKit.framework in Frameworks */,
+				D866C14919144AC600B2A5A5 /* SystemConfiguration.framework in Frameworks */,
+				D866C14719144ABE00B2A5A5 /* CFNetwork.framework in Frameworks */,
 				D866C13A19141D8D00B2A5A5 /* GameKit.framework in Frameworks */,
 				D8509B5819106DC100153CD3 /* iAd.framework in Frameworks */,
 				D8D3CB9C190FFE440018BE4C /* Social.framework in Frameworks */,
@@ -168,6 +182,9 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D866C14519144A9300B2A5A5 /* AppiraterDelegate.h */,
+				D866C14219144A7900B2A5A5 /* Appirater.h */,
+				D866C14319144A7900B2A5A5 /* Appirater.m */,
 				D866C141191440A600B2A5A5 /* Reference files */,
 				D8D3CB99190FF42B0018BE4C /* new_egg.caf */,
 				D8D3CB95190FF00B0018BE4C /* Blip1.caf */,
@@ -181,6 +198,7 @@
 				D856C16F190EC362007E25BD /* Egg.m */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
+				D866C14C19144B5500B2A5A5 /* AppInfo.h */,
 				D8509B5419106C6100153CD3 /* MyiAd.h */,
 				D8509B5519106C6100153CD3 /* MyiAd.m */,
 				D8D3CB9F19101A610018BE4C /* MenuScene.h */,
@@ -247,6 +265,9 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D866C14A19144ACD00B2A5A5 /* StoreKit.framework */,
+				D866C14819144AC600B2A5A5 /* SystemConfiguration.framework */,
+				D866C14619144ABE00B2A5A5 /* CFNetwork.framework */,
 				D866C13919141D8D00B2A5A5 /* GameKit.framework */,
 				D8509B5719106DC100153CD3 /* iAd.framework */,
 				D8D3CB9B190FFE440018BE4C /* Social.framework */,
@@ -412,6 +433,7 @@
 				D866C13D19141DC100B2A5A5 /* GameCenter.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				D8509B5619106C6100153CD3 /* MyiAd.m in Sources */,
+				D866C14419144A7900B2A5A5 /* Appirater.m in Sources */,
 				D8D3CBA119101A610018BE4C /* MenuScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				D856C170190EC362007E25BD /* Egg.m in Sources */,

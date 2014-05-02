@@ -8,6 +8,7 @@
 
 #import "GCHelper.h"
 #import <GameKit/GameKit.h>
+#import "AppInfo.h"
 
 @implementation GCHelper
 

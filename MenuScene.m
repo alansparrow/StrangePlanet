@@ -9,6 +9,7 @@
 #import "MenuScene.h"
 #import "AppDelegate.h"
 #import "GCHelper.h"
+#import "AppInfo.h"
 
 @implementation MenuScene
 
